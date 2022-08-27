@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import Apidatas from './Apidatas';
 import './App.css';
+import Form from './components/Form';
+import Game from './components/Game';
 
 function App() {
+const userData = (value)=>{
+return value;
+
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <nav>
+      <h1>Roshan's App:</h1>
+    </nav>
+    <Game/>
+    <Form userData = {userData}/>
+    <div className="apidatas">
+    <Apidatas/>
     </div>
+    
+    
+    </>
   );
 }
 
